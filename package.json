@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . ./SimpleStorage.sol "
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . ./SimpleStorage.sol ",
+    "prettier": "prettier --write '**/*.sol'"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,9 @@
     "dotenv": "^16.0.3",
     "ethers": "^5.7.2",
     "solc": "^0.8.17"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.2",
+    "prettier-plugin-solidity": "^1.1.1"
   }
 }
