@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o ./ethers-simple-storage ./ethers-simple-storage/SimpleStorage.sol "
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . ./SimpleStorage.sol "
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/majidln/Blockchain-course#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
     "solc": "^0.8.17"
   }
 }
