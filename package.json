@@ -1,0 +1,22 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o ./ethers-simple-storage ./ethers-simple-storage/SimpleStorage.sol "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majidln/Blockchain-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majidln/Blockchain-course/issues"
+  },
+  "homepage": "https://github.com/majidln/Blockchain-course#readme",
+  "dependencies": {
+    "solc": "^0.8.17"
+  }
+}
